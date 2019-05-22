@@ -1,0 +1,96 @@
+.app {
+  color: white;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 100px;
+  height: 100px;
+  background-color: #5a4f7c;
+  margin: 5px;
+  
+  font-family: Avenir;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.cell-style:hover {
+  background-color: #7b6bab;
+}
+
+.input {
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  background-color: #5a4f7c;
+  text-align: center;
+  text-decoration: none;
+  outline-width: 0;
+  border-radius: 2px;
+  border: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.restart {
+  font-size: 18px;
+  padding: 8px 24px;
+  background-color: #d6564d;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.input, .restart {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.winner, .restart {
+  font-family: Avenir Next;
+  font-weight: bold;
+  color: white;
+}
+
+.winner {
+  position: absolute;
+  font-size: 180px;
+  color: #ff6e6e;
+  opacity: .8;
+  z-index: 0;
+  mix-blend-mode: hard-light;
+  user-select: none;
+}
+
+.display-off {
+  display: none;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #40375c;
+  z-index: -1
+}
